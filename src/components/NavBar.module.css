@@ -1,0 +1,24 @@
+.navContainer{
+    display:flex;
+    gap: 30px;  /* Mas separacion entre botones */
+    background-color: #222; /* Un gris un poco elegante */
+    padding: 20px 40px; /* Mas espacio arriba/abajo y a los lados */
+    position : fixed;
+    width : 100%;
+    top : 0;
+    left : 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navlink
+{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.navlink:hover
+{
+    color: #61dafb;
+}
