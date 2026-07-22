@@ -5,9 +5,10 @@
     "initials" : "JMGT",
     "role" : "Electromechanical Scientist",
     "location" : "Barcelona",
+    "education" : "PhD in Electromechanical Engineering",
     "experience" : "I have been working for more than 20 years in both academic and industrial environments, focusing on the development of electromechanical systems and sustainable technologies. My expertise includes research, design, and implementation of innovative solutions that address complex challenges in the field.",
     "description" : "I am a passionate electromechanical scientist with a strong background in research and development. I specialize in designing and implementing innovative solutions in the field of electromechanics, with a focus on sustainable technologies. My work involves collaborating with multidisciplinary teams to create cutting-edge products that address real-world challenges.",
-    "email" : "motorinduccion@gmail.com"
+    "contact" : "motorinduccion@gmail.com"
   },
   "nav" : {
     "links": [
