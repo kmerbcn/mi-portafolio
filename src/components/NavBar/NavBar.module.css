@@ -1,7 +1,7 @@
 .navContainer{
     display:flex;
     gap: 30px;  /* Mas separacion entre botones */
-    background-color: #222; /* Un gris un poco elegante */
+    background-color: #000000; /* Un gris un poco elegante */
     padding: 20px 40px; /* Mas espacio arriba/abajo y a los lados */
     position : fixed;
     width : 100%;
@@ -12,7 +12,9 @@
 
 .navlink
 {
-    color: white;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 250;
     text-decoration: none;
     font-family: sans-serif;
     font-weight: bold;

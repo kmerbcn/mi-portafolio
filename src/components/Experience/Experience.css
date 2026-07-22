@@ -1,0 +1,22 @@
+.experience-section {   
+    padding-top : 80px; /* Mas espacio arriba */
+    
+    text-align : center;
+    max-width: 800px;
+    margin : 0 auto;
+    
+    padding : 60px 20px; /* Mas espacio arriba/abajo y a los lados */
+    padding-left : 20px;
+    padding-right : 20px;
+}
+
+.experience-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.experience-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333333;
+}
