@@ -17,3 +17,65 @@
     line-height: 1.6;
     color: #9ca3af !important;
 }
+
+.contact-form{
+    display : flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Matriz de 2 columnas: Columna 1 para etiquetas, Columna 2 para los recuadros blancos */
+.form-grid {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-grid label {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* Recuadros blancos */
+.form-grid input,
+.form-grid textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #ffffff; /* Fondo blanco pedido */
+    border: 1px solid #d1d5db; /* Borde gris claro */
+    border-radius: 8px;
+    color: #111827; /* Texto oscuro para que se lea bien en el fondo blanco */
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.form-grid input::placeholder,
+.form-grid textarea::placeholder {
+    color: #9ca3af; /* Color gris suave para el texto de guía (placeholder) */
+}
+
+.form-grid input:focus,
+.form-grid textarea:focus {
+    border-color: #2563eb; /* Borde azul brillante al escribir */
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.contact-form button {
+    width: fit-content;
+    padding: 12px 24px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.contact-form button:hover {
+    background-color: #1d4ed8;
+}
