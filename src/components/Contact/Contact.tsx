@@ -27,7 +27,7 @@ export function Contact(){
         const subject = `Mensaje de portfolio de ${name} (${email})`;
         const body = encodeURIComponent(message);
 
-        window.location.href = `mailto:${recipient}?subject={}`
+        window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`
     };
 
     return (
@@ -36,30 +36,37 @@ export function Contact(){
             <p>¿Quieres ponerte en contacto conmigo? Escribeme un mensaje:</p>
 
             <form onSubmit={handleSubmit} className='contact-form'>
-                <label htmlFor="name"> Tu nombre</label>
-                <input 
-                    type="text"
-                    placeholder="Tu nombre"
-                    value={name}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                />
+                <div className='form-grid'>
+                    <label htmlFor='mame'> Tu nombre </label>
+                    <input
+                        id='name'
+                        type='text'
+                        placeholder='Escribe tu nombre...'
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        required
+                    />
 
-                <label htmlFor="email">Tu correo electronico</label>
-                <input 
-                    type="email"
-                    placeholder="Tu correo electronico"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                />
-                <label htmlFor="message">Tu mensaje</label>
-                <textarea 
-                    placeholder="Escribe tu mensaje aquí..." 
-                    value={message} 
-                    onChange={(e) => setMessage(e.target.value)} 
-                    rows={5}
-                    required 
-                />
+                    <label htmlFor='email'> Tu correo electronico </label>
+                    <input
+                        id='email'
+                        type='email'
+                        placeholder="motorinduccion@gmail.com"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                    />
+
+                    <label htmlFor='message'> Mensaje </label>
+                    <textarea
+                        id='message'
+                        placeholder='Escribe tu mensaje aqui...'
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        rows={4}
+                        required
+                    />
+                </div>
                 <button type="submit">Enviar mensaje</button>
             </form>
         </section>

@@ -16,12 +16,30 @@
     font-size: 1.1rem;
     line-height: 1.6;
     color: #9ca3af !important;
+    margin-bottom: 50px;
 }
 
 .contact-form{
     display : flex;
     flex-direction: column;
     gap: 15px;
+    align-items: center;
+}
+
+.contact-form button{
+    width: fit-content;
+    padding: 12px 24px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    margin: 0 auto;
+
 }
 
 /* Matriz de 2 columnas: Columna 1 para etiquetas, Columna 2 para los recuadros blancos */
